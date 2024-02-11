@@ -1,7 +1,8 @@
 # 🚀 Next.js Boilerplate 2024
 
-[![Build Next.js Application](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml)
+[![Docker Image CI](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml)
 [![CodeQL](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql)
+[![Build Next.js Application](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml)
 
 ## 🌟 Introduction
 
