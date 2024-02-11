@@ -1,4 +1,4 @@
-🚀 Next.js Boilerplate 2024
+# 🚀 Next.js Boilerplate 2024
 
 [![Lint & Build](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml)
 
