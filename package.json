@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "docker:build": "docker build -t next-app .",
+    "docker:start": "docker run -p 3000:3000 next-app",
+    "docker:stop": "docker stop $(docker ps -q --filter ancestor=next-app )",
     "prepare": "husky install"
   },
   "dependencies": {
