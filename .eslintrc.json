@@ -3,6 +3,7 @@
   "plugins": ["simple-import-sort", "import", "prettier", "tailwindcss"],
   "rules": {
     "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": "off",
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "react-hooks/exhaustive-deps": "warn",
     "simple-import-sort/imports": "error",
