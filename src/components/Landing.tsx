@@ -1,16 +1,28 @@
 'use client';
 
-import { IconBoxAlignRightFilled, IconClipboardCopy, IconFileBroken, IconSignature } from '@tabler/icons-react';
+import {
+  IconBox,
+  IconBoxAlignRightFilled,
+  IconBrandDocker,
+  IconBrandNextjs,
+  IconBrandTypescript,
+  IconCode,
+  IconFilePencil,
+  IconHammer,
+  IconRainbow,
+  IconRefresh,
+  IconZoomFilled,
+} from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid';
 import { cn } from '@/lib/utils';
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="mx-auto max-w-4xl md:auto-rows-[20rem]">
+    <BentoGrid className="md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -123,7 +135,7 @@ const SkeletonTwo = () => {
     </motion.div>
   );
 };
-const SkeletonThree = () => {
+const SkeletonThree: FC<PropsWithChildren> = ({ children }) => {
   const variants = {
     initial: {
       backgroundPosition: '0 50%',
@@ -148,7 +160,7 @@ const SkeletonThree = () => {
         backgroundSize: '400% 400%',
       }}
     >
-      <motion.div className="size-full rounded-lg"></motion.div>
+      <motion.div className="size-full rounded-lg">{children}</motion.div>
     </motion.div>
   );
 };
@@ -268,6 +280,55 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
+        className="flex h-14 flex-row space-x-2 rounded-2xl border border-neutral-100  bg-white p-2 dark:border-white/[0.2] dark:bg-black"
+      >
+        <IconBrandNextjs className="size-full" />
+      </motion.div>
+
+      <motion.div
+        variants={variantsSecond}
+        className="ml-auto flex h-14 flex-row items-center justify-end space-x-2 rounded-lg border border-neutral-100 bg-white p-2 dark:border-white/[0.2] dark:bg-black"
+      >
+        <IconBrandTypescript className="size-full" />
+      </motion.div>
+    </motion.div>
+  );
+};
+
+const SkeletonSix = () => {
+  const variants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: 10,
+      rotate: 5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+  const variantsSecond = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: -10,
+      rotate: -5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      whileHover="animate"
+      className="flex size-full min-h-[6rem] flex-1 flex-col space-y-2 bg-dot-black/[0.2] dark:bg-dot-white/[0.2]"
+    >
+      <motion.div
+        variants={variants}
         className="flex flex-row items-start space-x-2 rounded-2xl border border-neutral-100  bg-white p-2 dark:border-white/[0.2] dark:bg-black"
       >
         <Image
@@ -291,41 +352,107 @@ const SkeletonFive = () => {
     </motion.div>
   );
 };
+
 const items = [
   {
-    title: 'AI Content Generation',
-    description: <span className="text-sm">Experience the power of AI in generating unique content.</span>,
-    header: <SkeletonOne />,
-    className: 'md:col-span-1',
-    icon: <IconClipboardCopy className="size-4 text-neutral-500" />,
-  },
-  {
-    title: 'Automated Proofreading',
-    description: <span className="text-sm">Let AI handle the proofreading of your documents.</span>,
-    header: <SkeletonTwo />,
-    className: 'md:col-span-1',
-    icon: <IconFileBroken className="size-4 text-neutral-500" />,
-  },
-  {
-    title: 'Contextual Suggestions',
-    description: <span className="text-sm">Get AI-powered suggestions based on your writing context.</span>,
-    header: <SkeletonThree />,
-    className: 'md:col-span-1',
-    icon: <IconSignature className="size-4 text-neutral-500" />,
-  },
-  {
-    title: 'Sentiment Analysis',
-    description: <span className="text-sm">Understand the sentiment of your text with AI analysis.</span>,
-    header: <SkeletonFour />,
-    className: 'md:col-span-2',
-    // icon: <IconTableColumn className="size-4 text-neutral-500" />,
-  },
-
-  {
-    title: 'Text Summarization',
-    description: <span className="text-sm">Summarize your lengthy documents with AI technology.</span>,
+    title: 'Next.js + TypeScript',
+    description: (
+      <span className=" text-sm">
+        Leverage the full power of Next.js 14 and TypeScript for robust, scalable applications that stand the test of
+        time.
+      </span>
+    ),
     header: <SkeletonFive />,
     className: 'md:col-span-1',
     icon: <IconBoxAlignRightFilled className="size-4 text-neutral-500" />,
   },
+
+  {
+    title: 'ESLint + Prettier Setup',
+    description: (
+      <span className="text-sm">
+        Code quality is non-negotiable. With ESLint and Prettier, your codebase remains clean, consistent, and
+        error-free.
+      </span>
+    ),
+    header: <SkeletonTwo />,
+    className: 'md:col-span-1',
+    icon: <IconZoomFilled className="size-4 text-neutral-500" />,
+  },
+  {
+    title: 'Husky + lint-staged',
+    description: (
+      <span className="text-sm">
+        Never compromise on code quality. Our setup ensures every commit is polished and ready for collaboration.
+      </span>
+    ),
+    header: (
+      <SkeletonThree>
+        <IconCode className="size-full" />
+      </SkeletonThree>
+    ),
+    className: 'md:col-span-1',
+    icon: <IconHammer className="size-4 text-neutral-500" />,
+  },
+  {
+    title: 'Commitlint',
+    description: (
+      <span className="text-sm">
+        Make every commit count. Enforce meaningful commit messages for a clear, navigable project history.Keep commit
+        messages clear and meaningful, streamlining project history and collaboration.
+      </span>
+    ),
+    header: <SkeletonFour />,
+    className: 'md:col-span-2',
+    icon: <IconFilePencil className="size-4 text-neutral-500" />,
+  },
+
+  {
+    title: 'TailwindCSS & shadcnUI',
+    description: <span className="text-sm">Build stunning, responsive designs effortlessly. Our integration .</span>,
+    header: <SkeletonOne />,
+    className: 'md:col-span-1',
+    icon: <IconRainbow className="size-4 text-neutral-500" />,
+  },
+
+  {
+    title: 'Docker Ready',
+    description: (
+      <span className="text-sm">
+        From development to deployment, our Docker-ready configuration ensures your project transitions smoothly across
+        environments.
+      </span>
+    ),
+    header: (
+      <SkeletonThree>
+        <IconBrandDocker className="size-full" />
+      </SkeletonThree>
+    ),
+    className: 'md:col-span-1',
+    icon: <IconBox className="size-4 text-neutral-500" />,
+  },
+  {
+    title: 'Simple Import Sort & Framer Motion',
+    description: (
+      <span className="text-sm">
+        Keep imports tidy and animate with ease. Our boilerplate simplifies imports and enriches user experiences with
+        Framer Motion for engaging animations.
+      </span>
+    ),
+    header: <SkeletonFour />,
+    className: 'md:col-span-2',
+    icon: <IconRefresh className="size-4 text-neutral-500" />,
+  },
+  // {
+  //   title: `Powered by Next.js 14's App Router`,
+  //   description: (
+  //     <span className="text-sm">
+  //       Embrace the cutting-edge with Next.js 14&aposs App Router, offering enhanced routing capabilities for your
+  //       applications.
+  //     </span>
+  //   ),
+  //   header: <SkeletonFour />,
+  //   className: 'md:col-span-3',
+  //   icon: <IconBolt className="size-4 text-neutral-500" />,
+  // },
 ];
