@@ -1,15 +1,15 @@
 {
   "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
-  "plugins": ["simple-import-sort", "import", "prettier", "tailwindcss"],
+  "plugins": ["simple-import-sort", "prettier", "tailwindcss"],
   "rules": {
     "tailwindcss/no-custom-classname": "off",
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "tailwindcss/classnames-order": "off",
     "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-types": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "import/first": "error",
-    "import/newline-after-import": "error",
-    "import/no-duplicates": "error"
+    "prettier/prettier": "error"
   },
   "parserOptions": {
     "sourceType": "module",

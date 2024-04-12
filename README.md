@@ -27,19 +27,42 @@ Designed with the future of web development in mind, this project serves as a bl
 - 🔄 Simple Import Sort: Clean and organized imports.
 - 🐳 Docker Ready: Configuration for easy containerization and deployment.
 
+## 🌟 Useful Links
+
+Explore these tools to further enhance your development workflow:
+
+- [Realtime Colors](https://www.realtimecolors.com) - Elevate your design with modern fonts and a dynamic color palette generator.
+- [Meta Tags](https://metatags.io) - Debug and generate meta tag code for any website
+
 ## 🛠️ Getting Started
 
 ### Step 1: 🚀 Initial Setup
 
-- Clone the repository: `git clone https://github.com/edwinhern/next-template-2024.git`
-- Navigate: `cd next-template-2024`
-- Install dependencies: `npm ci`
+Begin by cloning the repository, navigating to the project directory, and installing dependencies. Execute the following command in your terminal:
+
+```bash
+git clone https://github.com/edwinhern/next-template-2024.git && cd next-template-2024 && npm ci
+```
 
 ### Step 2: 🏃‍♂️ Running the Project
 
-- Development Mode: `npm run dev`
-- Building: `npm run build`
-- Production Mode: `npm run start` or `npm run docker:start`
+Launch the development server to see your changes in real-time:
+
+```bash
+npm run dev
+```
+
+To prepare your project for production, build it with:
+
+```bash
+npm run build
+```
+
+Finally, run your project in production mode:
+
+```bash
+npm run start
+```
 
 ## 🤝 Feedback and Contributions
 
