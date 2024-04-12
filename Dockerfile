@@ -1,5 +1,5 @@
 # Stage 1: Building the app
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
 
 # Set the working directory in the Docker container
 WORKDIR /app
@@ -23,7 +23,7 @@ RUN npm run build
 # RUN yarn build
 
 # Stage 2: Run the app
-FROM node:18-alpine AS runner
+FROM node:20-alpine AS runner
 WORKDIR /app
 
 # Copy the build output from the builder stage
