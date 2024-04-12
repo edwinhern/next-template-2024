@@ -5,28 +5,23 @@
 [![Docker Image CI](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml)
 [![Release](https://github.com/edwinhern/next-template-2024/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/release.yml)
 
-## 🌟 Introduction
+Welcome to the Next.js Boilerplate 2024 – your starting point for building modern web applications that are ready to take on tomorrow's challenges.
 
-Welcome to the Next.js Boilerplate 2024 – a modern, efficient, and developer-friendly foundation for building web applications. This project integrates the latest best practices and tools in the Next.js ecosystem, aimed at improving productivity, code quality, and developer experience.
+## ⚡ Features & Technologies
 
-## 💡 Motivation and Intentions
+Here's what powers the Next.js Boilerplate 2024, from the framework to the development tools:
 
-Designed with the future of web development in mind, this project serves as a blueprint for:
-
-- ✨ Streamlining the setup of new Next.js projects.
-- 🎨 Integrating design systems with TailwindCSS for rapid UI development.
-- 📏 Enforcing coding standards with ESLint and Prettier.
-- ⚙️ Automating code quality checks with Husky, lint-staged, and Commitlint.
-
-## 🚀 Features
-
-- 🌈 TailwindCSS Integration: For building beautiful, responsive designs with speed.
-- 🔍 ESLint & Prettier Setup: To ensure code quality and consistency.
-- 🛠️ Husky & lint-staged: Automating pre-commit checks for linting and formatting.
-- 📝 Commitlint: Enforcing conventional commit messages.
-- 📦 Next.js Core Web Vitals: Optimized for performance and SEO.
-- 🔄 Simple Import Sort: Clean and organized imports.
-- 🐳 Docker Ready: Configuration for easy containerization and deployment.
+- [Next.js](https://www.nextjs.org/) - The React framework for production 🚀
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework 🎨
+- [shadcn/ui](https://ui.shadcn.com/) - Reusable React components 🛠
+- [Vitest](https://vitest.dev/) - A blazing fast unit-test framework that runs in Vite ⚡
+- [Testing Library](https://testing-library.com/) - Helps test UI components in a user-centric way 🧪
+- [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) - Fully automated version management and package publishing 📦
+- [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/) - Automatically keep your dependencies up to date 🔄
+- [Commitlint](https://commitlint.js.org/) - Ensures your commit messages meet the conventional commit format 🔍
+- [Simple Import Sort](https://github.com/lydell/eslint-plugin-simple-import-sort) - Automatically sorts imports for cleaner code 📑
+- [Docker](https://www.docker.com/) - Simplifies deployment with containerization 🐳
+- [GitHub Actions](https://github.com/features/actions) - Automates your workflows for testing, building, and deploying 🚀
 
 ## 🌟 Useful Links
 
