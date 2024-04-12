@@ -1,5 +1,9 @@
 import type { UserConfig } from '@commitlint/types';
 
-export default {
+const Configuration: UserConfig = {
   extends: ['@commitlint/config-conventional'],
-} as UserConfig;
+  formatter: '@commitlint/format',
+  ignores: [(commitMessage) => commitMessage.startsWith('chore(release): :bookmark: bump version')],
+};
+
+export default Configuration;

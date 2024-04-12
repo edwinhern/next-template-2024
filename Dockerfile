@@ -10,9 +10,9 @@ COPY package*.json ./
 # COPY package.json yarn.lock ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 # For Yarn, use the following command instead
-# RUN yarn install
+# RUN yarn ci
 
 # Copy the rest of your app's source code from your host to your image filesystem.
 COPY . .
