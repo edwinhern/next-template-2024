@@ -1,8 +1,9 @@
 # 🚀 Next.js Boilerplate 2024
 
-[![Docker Image CI](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml)
-[![CodeQL](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql)
 [![Build Next.js Application](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml)
+[![CodeQL](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql)
+[![Docker Image CI](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/docker-image.yml)
+[![Release](https://github.com/edwinhern/next-template-2024/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/release.yml)
 
 ## 🌟 Introduction
 
