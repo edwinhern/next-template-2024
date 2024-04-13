@@ -48,7 +48,7 @@
     "@vitest/coverage-v8": "^1.4.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
-    "eslint-config-next": "14.2.0",
+    "eslint-config-next": "14.2.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-simple-import-sort": "^12.0.0",
