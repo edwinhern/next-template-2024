@@ -1,3 +1,9 @@
+## [1.0.11](https://github.com/edwinhern/next-template-2024/compare/v1.0.10...v1.0.11) (2024-05-23)
+
+### Bug Fixes
+
+- **deps:** update dependency @vercel/analytics to v1.3.0 ([3a081f7](https://github.com/edwinhern/next-template-2024/commit/3a081f7e9ca1b821ec6a86b51707962fb6e7ef93))
+
 ## [1.0.10](https://github.com/edwinhern/next-template-2024/compare/v1.0.9...v1.0.10) (2024-05-22)
 
 ### Bug Fixes
