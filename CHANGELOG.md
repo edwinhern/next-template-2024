@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/edwinhern/next-template-2024/compare/v1.0.11...v1.0.12) (2024-05-24)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([4b686d7](https://github.com/edwinhern/next-template-2024/commit/4b686d79efa292be1f8349fb0757edb14e0e41b7))
+
 ## [1.0.11](https://github.com/edwinhern/next-template-2024/compare/v1.0.10...v1.0.11) (2024-05-23)
 
 ### Bug Fixes
