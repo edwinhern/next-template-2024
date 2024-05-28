@@ -1,13 +1,15 @@
-import '@/styles/globals.css';
+import type { Metadata } from 'next';
+
+import { PropsWithChildren } from 'react';
 
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import type { Metadata } from 'next';
 import { Poppins, Raleway } from 'next/font/google';
-import { PropsWithChildren } from 'react';
 
 import { ThemeProvider } from '@/components/common/providers';
 import { cn } from '@/lib/utils';
+
+import '@/styles/globals.css';
 
 const raleway = Raleway({
   subsets: ['latin'],

@@ -1,4 +1,6 @@
-# 🚀 Next.js Boilerplate 2024
+<h1 align="center">
+ 🚀 Next.js Boilerplate 2024
+</h1>
 
 [![Build Next.js Application](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/build.yml)
 [![CodeQL](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/edwinhern/next-template-2024/actions/workflows/github-code-scanning/codeql)
@@ -19,7 +21,6 @@ Here's what powers the Next.js Boilerplate 2024, from the framework to the devel
 - [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) - Fully automated version management and package publishing 📦
 - [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/) - Automatically keep your dependencies up to date 🔄
 - [Commitlint](https://commitlint.js.org/) - Ensures your commit messages meet the conventional commit format 🔍
-- [Simple Import Sort](https://github.com/lydell/eslint-plugin-simple-import-sort) - Automatically sorts imports for cleaner code 📑
 - [Docker](https://www.docker.com/) - Simplifies deployment with containerization 🐳
 - [GitHub Actions](https://github.com/features/actions) - Automates your workflows for testing, building, and deploying 🚀
 
@@ -29,6 +30,9 @@ Explore these tools to further enhance your development workflow:
 
 - [Realtime Colors](https://www.realtimecolors.com) - Elevate your design with modern fonts and a dynamic color palette generator.
 - [Meta Tags](https://metatags.io) - Debug and generate meta tag code for any website
+- [Favicon.io](https://favicon.io/favicon-converter/) - Quickly generate variety of favicon sizes
+- [Open Graph Generator](https://imgsrc.io/) - Generate beautiful Open Graph images with zero effort.
+- [Open Graph Debugger](https://imgsrc.io/tools/open-graph-debugger) - Preview how your Open Graph images will be rendered on social media platforms.
 
 ## 🛠️ Getting Started
 

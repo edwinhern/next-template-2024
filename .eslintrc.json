@@ -1,18 +1,37 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
-  "plugins": ["simple-import-sort", "prettier", "tailwindcss"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:testing-library/react"
+  ],
+  "plugins": ["perfectionist"],
   "rules": {
-    "tailwindcss/no-custom-classname": "off",
-    "tailwindcss/classnames-order": "off",
-    "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-types": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "prettier/prettier": "error"
-  },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": "latest"
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "type": "natural",
+        "order": "asc",
+        "groups": [
+          "type",
+          "react",
+          ["builtin", "external"],
+          "internal-type",
+          "internal",
+          ["parent-type", "sibling-type", "index-type"],
+          ["parent", "sibling", "index"],
+          "side-effect",
+          "style",
+          "object",
+          "unknown"
+        ],
+        "custom-groups": {
+          "value": { "react": ["react", "react-*"] },
+          "type": { "react": "react" }
+        },
+        "newlines-between": "always",
+        "internal-pattern": ["@/components/**", "@/lib/**", "@/app/**"]
+      }
+    ]
   }
 }

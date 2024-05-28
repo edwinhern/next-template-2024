@@ -1,8 +1,4 @@
-import withBundleAnalyzer from '@next/bundle-analyzer';
-
-const bundleAnalyzer = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-});
+import million from 'million/compiler';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -10,4 +6,12 @@ const nextConfig = {
   swcMinify: true,
 };
 
-export default bundleAnalyzer(nextConfig);
+const millionConfig = {
+  auto: {
+    rsc: true,
+  },
+  server: true,
+  rsc: true,
+};
+
+export default million.next(nextConfig, millionConfig);

@@ -21,16 +21,16 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GH_Token }}
 
-      # Build step with dynamic tagging
-      - name: Build the Docker image
+      # Build and tag the production Docker image
+      - name: Build the production Docker image
         run: |
-          docker build . --file Dockerfile --tag ghcr.io/${{ github.repository }}:${{ github.sha }}
+          docker build . --file Dockerfile --target runner --tag ghcr.io/${{ github.repository }}:${{ github.sha }}
           if [ "${{ github.ref }}" == "refs/heads/main" ]; then
             docker tag ghcr.io/${{ github.repository }}:${{ github.sha }} ghcr.io/${{ github.repository }}:latest
           fi
 
-      # Push step only executed for pushes to main
-      - name: Push the Docker image
+      # Push the production Docker image
+      - name: Push the production Docker image
         if: github.ref == 'refs/heads/main'
         run: |
           docker push ghcr.io/${{ github.repository }}:${{ github.sha }}
