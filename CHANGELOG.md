@@ -1,3 +1,9 @@
+## [1.0.14](https://github.com/edwinhern/next-template-2024/compare/v1.0.13...v1.0.14) (2024-05-30)
+
+### Bug Fixes
+
+- **deps:** update dependency lucide-react to ^0.381.0 ([1794963](https://github.com/edwinhern/next-template-2024/commit/1794963789583e52441c08c72eb784bd65f04957))
+
 ## [1.0.13](https://github.com/edwinhern/next-template-2024/compare/v1.0.12...v1.0.13) (2024-05-30)
 
 ### Bug Fixes
