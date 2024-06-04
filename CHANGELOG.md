@@ -1,3 +1,9 @@
+## [1.0.17](https://github.com/edwinhern/next-template-2024/compare/v1.0.16...v1.0.17) (2024-06-04)
+
+### Bug Fixes
+
+- **deps:** update dependency million to v3.1.11 ([8c2b309](https://github.com/edwinhern/next-template-2024/commit/8c2b309f08d22164df3200cf592e3095d7a77779))
+
 ## [1.0.16](https://github.com/edwinhern/next-template-2024/compare/v1.0.15...v1.0.16) (2024-06-03)
 
 ### Bug Fixes
