@@ -1,3 +1,9 @@
+## [1.0.24](https://github.com/edwinhern/next-template-2024/compare/v1.0.23...v1.0.24) (2024-06-21)
+
+### Bug Fixes
+
+- **deps:** update react ([0bf4658](https://github.com/edwinhern/next-template-2024/commit/0bf4658e9c734803d609fc6a999aa586814ce683))
+
 ## [1.0.23](https://github.com/edwinhern/next-template-2024/compare/v1.0.22...v1.0.23) (2024-06-20)
 
 ### Bug Fixes
