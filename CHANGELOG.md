@@ -1,3 +1,9 @@
+## [1.0.28](https://github.com/edwinhern/next-template-2024/compare/v1.0.27...v1.0.28) (2024-07-10)
+
+### Bug Fixes
+
+- **deps:** update dependency next to v14.2.5 ([b321572](https://github.com/edwinhern/next-template-2024/commit/b321572feefc0fe30c24d1e05fbd1c5cbfee075f))
+
 ## [1.0.27](https://github.com/edwinhern/next-template-2024/compare/v1.0.26...v1.0.27) (2024-07-10)
 
 ### Bug Fixes
