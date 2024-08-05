@@ -1,0 +1,35 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "options": {
+            "attributes": ["classList"],
+            "functions": ["clsx", "cva", "cn"]
+          }
+        }
+      },
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noConfusingVoidType": "off"
+      },
+      "style": {
+        "noUselessElse": "off",
+        "noNonNullAssertion": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
+    },
+    "ignore": ["**/.next", "**/node_modules"]
+  }
+}

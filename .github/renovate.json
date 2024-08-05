@@ -1,0 +1,57 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "customManagers:biomeVersions"],
+  "labels": ["chore: dependencies"],
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@biomejs/biome"],
+      "groupName": "biome",
+      "groupSlug": "biome",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@commitlint/cli", "@commitlint/config-conventional"],
+      "groupName": "commitlint",
+      "groupSlug": "commitlint",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@types/node", "@types/react", "@types/react-dom"],
+      "groupName": "types",
+      "groupSlug": "types",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["autoprefixer", "postcss", "tailwindcss"],
+      "groupName": "postcss",
+      "groupSlug": "postcss",
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^@radix-ui/react-"],
+      "groupName": "radix-ui",
+      "groupSlug": "radix-ui",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["class-variance-authority", "clsx"],
+      "groupName": "class-utils",
+      "groupSlug": "class-utils",
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["@vitest", "vitest"],
+      "groupName": "vitest"
+    }
+  ]
+}
