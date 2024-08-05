@@ -11,8 +11,7 @@
     "lint": "biome check src/",
     "lint:fix": "biome check --fix --unsafe",
     "format": "biome format src/",
-    "test": "vitest run",
-    "prepare": "husky"
+    "test": "vitest run"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.6",
