@@ -1,4 +1,4 @@
-name: Build Next.js Application
+name: Build
 
 on:
   push:
